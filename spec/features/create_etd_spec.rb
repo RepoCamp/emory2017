@@ -21,6 +21,8 @@ RSpec.feature 'Create a Etd' do
       fill_in 'Title', with: 'China and its Minority Population'
       fill_in 'Creator', with: 'Eun, Dongwon'
       fill_in 'Keyword', with: 'China'
+      click_link("Additional fields")
+      fill_in "Degree", with: "Bachelor of Arts with Honors"
       select('All rights reserved', from: 'Rights')
       choose('open')
       check('agreement')
