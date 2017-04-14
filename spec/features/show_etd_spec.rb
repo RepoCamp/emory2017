@@ -4,9 +4,16 @@ RSpec.feature 'Display an ETD' do
   let(:title) { ['China and its Minority Population'] }
   let(:creator) { ['Eun, Dongwon'] }
   let(:keyword) { ['China', 'Minority Population'] }
+  let(:degree) { ['Bachelor of Arts with Honors'] }
   let(:visibility) { Hydra::AccessControls::AccessRight::VISIBILITY_TEXT_VALUE_PUBLIC }
   let :etd do
-    Etd.new(title: title, creator: creator, keyword: keyword, visibility: visibility)
+    Etd.new(
+      title: title,
+      creator: creator,
+      keyword: keyword,
+      visibility: visibility,
+      degree: degree
+    )
   end
 
   context 'a logged in user' do
@@ -27,6 +34,7 @@ RSpec.feature 'Display an ETD' do
       expect(page).to have_content etd.title.first
       expect(page).to have_content etd.creator.first
       expect(page).to have_content etd.keyword.first
+      expect(page).to have_content etd.degree.first
     end
   end
 end
