@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This instance of [Hyrax](http://hyr.ax/) was created for the Hydra Camp being
+hosted at Emory University, April 17 - 20, 2017.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This application is where the code examples referenced in the
+[class tutorials](https://github.com/curationexperts/emory-camp/wiki) will live. 
