@@ -38,6 +38,7 @@ RSpec.feature 'Search for an ETD' do
       expect(page).to have_content etd.title.first
       expect(page).to have_content etd.creator.first
       expect(page).to have_content etd.keyword.first
+      expect(page).to have_content etd.degree.first
     end
   end
 end
